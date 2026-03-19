@@ -1,0 +1,60 @@
+{
+  "competitor": "Panther",
+  "analysis_month": "2026-03",
+  "executive_strategic_insight": {
+    "core_theme": "Pivoting from pure SIEM to unified security data platform with real-time detection-as-code",
+    "strategic_focus": "Panther is positioning as the modern alternative to Splunk/Sumo Logic, emphasizing serverless architecture, detection-as-code using Python, and cost transparency. They're moving upmarket toward enterprise SOCs.",
+    "ecosystem_momentum": "8 new data source integrations including CrowdStrike Falcon, SentinelOne, and Okta. Focus on security tool consolidation.",
+    "persona_shift": "Targeting security engineers and detection engineers specifically — building tools for teams that write detection logic, not just consume alerts.",
+    "pricing_model_shift": "Usage-based pricing (per GB ingested) with committed use discounts. No free tier — enterprise-first approach."
+  },
+  "engineering_capacity": {
+    "total_updates_shipped": 28,
+    "new_features_vs_maintenance_ratio": "55/45",
+    "velocity_assessment": "Medium — bi-weekly releases, significant infrastructure investment reducing visible feature output"
+  },
+  "resource_allocation": [
+    {
+      "bucket": "Core Detection Engine",
+      "effort_pct": 40,
+      "key_items": ["Real-time detection pipeline overhaul", "Python detection SDK v3", "Correlation rules engine", "Alert deduplication"]
+    },
+    {
+      "bucket": "Data Platform",
+      "effort_pct": 30,
+      "key_items": ["Snowflake data lake integration", "Log schema normalization", "Data retention policies", "Query performance optimization"]
+    },
+    {
+      "bucket": "Integrations",
+      "effort_pct": 20,
+      "key_items": ["CrowdStrike bi-directional sync", "SentinelOne log ingestion", "Okta event streaming", "PagerDuty alerting"]
+    },
+    {
+      "bucket": "Admin & Compliance",
+      "effort_pct": 10,
+      "key_items": ["RBAC enhancements", "Audit trail improvements"]
+    }
+  ],
+  "intelligence_signals": {
+    "job_board_signals": "Hiring senior backend engineers (Go), data engineers, and field CTOs. No junior roles visible — suggests mature team optimizing, not scaling broadly.",
+    "target_users": "Detection engineers, security operations teams, and cloud-native security architects",
+    "monetization_approach": "Enterprise SaaS with usage-based component. Large deal sizes ($200K+ ARR) targeting companies doing 1TB+/day log ingestion.",
+    "differentiators": "Serverless architecture (no infrastructure management), detection-as-code (Python), transparent pricing model. Competes on cost efficiency vs legacy SIEMs."
+  },
+  "securin_implications": {
+    "gaps_exposed": [
+      "Securin has no SIEM/detection capability",
+      "No log ingestion or correlation features",
+      "Detection-as-code is a paradigm Securin doesn't address"
+    ],
+    "areas_of_focus": [
+      "Consider SIEM integration partnerships rather than building",
+      "Ensure Securin data can feed into Panther-like platforms via standard formats"
+    ],
+    "threat_level": "low",
+    "product_specific": {
+      "APT": "Panther's detection engine could compete with APT threat detection if they expand into threat intelligence",
+      "CSPM": "Panther's cloud log analysis overlaps with CSPM cloud security monitoring"
+    }
+  }
+}

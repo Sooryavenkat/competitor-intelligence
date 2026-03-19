@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Securin — Competitor Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="header-left">
+            <div class="logo">Securin</div>
+            <span class="header-title">Competitor Intelligence Dashboard</span>
+        </div>
+        <div class="header-right">
+            <div class="avatar">SV</div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="nav-section-label">Views</div>
+
+            <div class="nav-item active" data-view="overview">
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg>
+                <span>Overview</span>
+            </div>
+
+            <div class="nav-item" data-view="timeline">
+                <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><polyline points="8 6 3 12 8 18"></polyline><polyline points="16 6 21 12 16 18"></polyline></svg>
+                <span>Timeline</span>
+            </div>
+
+            <div class="nav-item" data-view="detail">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                <span>Competitor Detail</span>
+            </div>
+
+            <div class="nav-item" data-view="implications">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>Securin Impact</span>
+            </div>
+
+            <!-- Month Selector at bottom -->
+            <div class="month-selector">
+                <label>Reporting Period</label>
+                <div class="month-nav">
+                    <button onclick="app.prevMonth()" title="Previous month">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <select id="monthSelect" onchange="app.selectMonth(this.value)"></select>
+                    <button onclick="app.nextMonth()" title="Next month">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content" id="mainContent">
+            <div class="loading">Loading dashboard data...</div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

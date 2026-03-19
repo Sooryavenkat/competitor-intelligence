@@ -1,0 +1,62 @@
+{
+  "competitor": "Picus Security",
+  "analysis_month": "2026-03",
+  "executive_strategic_insight": {
+    "core_theme": "Expanding from BAS into complete security validation platform — attack simulation plus exposure management",
+    "strategic_focus": "Picus is broadening beyond breach & attack simulation to include attack surface management and security posture validation. They want to be the 'prove your security works' platform. Major push into AI-driven attack scenario generation.",
+    "ecosystem_momentum": "12 new vendor integrations for security control validation (Palo Alto, Fortinet, CrowdStrike). Building the 'validate your existing tools' narrative.",
+    "persona_shift": "Moving from red team operators to security operations managers and CISOs who need to justify security spend with measurable validation.",
+    "pricing_model_shift": "Annual platform license with module-based upsell (BAS core + Attack Surface + Posture Management). Enterprise pricing, no self-serve."
+  },
+  "engineering_capacity": {
+    "total_updates_shipped": 22,
+    "new_features_vs_maintenance_ratio": "60/40",
+    "velocity_assessment": "Medium — monthly releases with steady feature expansion into adjacent categories"
+  },
+  "resource_allocation": [
+    {
+      "bucket": "BAS Core Engine",
+      "effort_pct": 35,
+      "key_items": ["AI-generated attack scenarios", "APT group simulation packs", "Lateral movement simulation", "Cloud attack paths"]
+    },
+    {
+      "bucket": "Attack Surface Management",
+      "effort_pct": 25,
+      "key_items": ["External attack surface discovery", "Exposure prioritization by exploitability", "Asset-to-attack-path mapping"]
+    },
+    {
+      "bucket": "Security Control Validation",
+      "effort_pct": 25,
+      "key_items": ["Firewall rule validation", "EDR detection gap analysis", "SIEM rule effectiveness scoring", "Vendor-specific validation modules"]
+    },
+    {
+      "bucket": "Platform & UX",
+      "effort_pct": 15,
+      "key_items": ["Executive reporting dashboard", "Risk score trending", "Multi-site management"]
+    }
+  ],
+  "intelligence_signals": {
+    "job_board_signals": "Hiring threat researchers, enterprise account executives, and product managers. Sales expansion suggests Series B/C growth into enterprise segment.",
+    "target_users": "CISOs, security operations managers, and GRC teams needing security effectiveness metrics",
+    "monetization_approach": "Enterprise platform licensing. Land with BAS, expand with Attack Surface and Posture Management modules. Large deal sizes ($150K-500K ARR).",
+    "differentiators": "Unique combination of attack simulation + security control validation. Proves whether defenses actually work against specific threats. Strong APT simulation library."
+  },
+  "securin_implications": {
+    "gaps_exposed": [
+      "Securin has no breach & attack simulation capability",
+      "No security control validation (does your firewall actually block X?)",
+      "Missing 'prove it works' narrative for security posture"
+    ],
+    "areas_of_focus": [
+      "Consider BAS partnership or build — customers increasingly want validation, not just detection",
+      "Add exploitability context to Sentry EASM and Triage UVM findings",
+      "Build 'security effectiveness scoring' into platform reporting"
+    ],
+    "threat_level": "medium",
+    "product_specific": {
+      "Sentry (EASM)": "Picus is building external ASM that directly competes with Sentry, with the added value of attack simulation",
+      "Triage (UVM)": "Their exploitability-based prioritization overlaps with Triage's vulnerability management",
+      "APT": "Picus APT simulation packs are a different approach to the same threat intelligence Securin APT provides"
+    }
+  }
+}

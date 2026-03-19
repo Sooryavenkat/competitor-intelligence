@@ -1,0 +1,61 @@
+{
+  "competitor": "Horizon3.ai / NodeZero",
+  "analysis_month": "2026-03",
+  "executive_strategic_insight": {
+    "core_theme": "Autonomous pentesting at scale — making continuous security validation accessible to mid-market",
+    "strategic_focus": "Horizon3 is expanding NodeZero beyond one-time pentests into continuous attack surface validation. They're adding internal network testing alongside external, and building compliance reporting to justify budget.",
+    "ecosystem_momentum": "5 new integrations including ServiceNow vulnerability response, Tenable.io import, and Qualys asset sync. Building the 'pentest results into your existing workflow' story.",
+    "persona_shift": "Moving from security consultants/pentesters to IT security managers at mid-market companies who need pentest results without pentest expertise.",
+    "pricing_model_shift": "Annual subscription with unlimited tests (previously per-test pricing). Major shift to encourage continuous use over point-in-time assessments."
+  },
+  "engineering_capacity": {
+    "total_updates_shipped": 18,
+    "new_features_vs_maintenance_ratio": "70/30",
+    "velocity_assessment": "Medium — monthly releases but each contains significant capability additions"
+  },
+  "resource_allocation": [
+    {
+      "bucket": "Core Pentesting Engine",
+      "effort_pct": 45,
+      "key_items": ["Internal network attack paths", "Active Directory exploitation chains", "Cloud infrastructure testing", "New CVE exploit modules"]
+    },
+    {
+      "bucket": "Reporting & Compliance",
+      "effort_pct": 25,
+      "key_items": ["PCI-DSS compliance report templates", "Executive summary generator", "Remediation priority scoring", "Trend reporting across tests"]
+    },
+    {
+      "bucket": "Integrations & Ecosystem",
+      "effort_pct": 20,
+      "key_items": ["ServiceNow VR module", "Tenable.io bidirectional sync", "Qualys asset import", "Slack/Teams alerting"]
+    },
+    {
+      "bucket": "Platform UX",
+      "effort_pct": 10,
+      "key_items": ["Dashboard redesign", "Attack path visualization improvements"]
+    }
+  ],
+  "intelligence_signals": {
+    "job_board_signals": "Hiring offensive security researchers, exploit developers, and enterprise sales reps. Sales hiring suggests Series B/C growth push.",
+    "target_users": "IT security managers, compliance officers, and MSSPs serving mid-market",
+    "monetization_approach": "Annual SaaS subscription. Moving to unlimited-tests model to increase stickiness and justify as 'always-on' security investment.",
+    "differentiators": "Autonomous operation (no agent required), realistic attack simulation, fast time-to-value (results in hours not weeks). Main competitor is manual pentesting firms."
+  },
+  "securin_implications": {
+    "gaps_exposed": [
+      "Securin lacks autonomous pentesting/attack simulation",
+      "No continuous security validation capability",
+      "Missing compliance-ready pentest reporting"
+    ],
+    "areas_of_focus": [
+      "Explore BAS (breach & attack simulation) partnerships or build",
+      "Add attack path context to Sentry EASM findings",
+      "Build pentest-grade reporting for EASM results"
+    ],
+    "threat_level": "medium",
+    "product_specific": {
+      "Sentry (EASM)": "NodeZero's external testing directly overlaps with EASM — they find exposures AND prove exploitability",
+      "ASM": "Horizon3's asset discovery + exploitation chain is more actionable than passive ASM scanning"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "competitor": "Snyk",
+  "analysis_month": "2026-03",
+  "executive_strategic_insight": {
+    "core_theme": "Doubling down on AI-assisted remediation to shift from detection to developer-first fix workflows",
+    "strategic_focus": "Snyk is heavily investing in AI-powered code fix suggestions, expanding SBOM capabilities, and deepening IDE integrations. Their strategy is to own the developer workflow from code to cloud, with security embedded invisibly.",
+    "ecosystem_momentum": "15+ new integrations this quarter including ServiceNow, Jira Cloud, and Azure DevOps pipelines. Total ecosystem now exceeds 100 integrations.",
+    "persona_shift": "Shifting from security teams to platform engineering and DevOps leads. New features target developer experience and CI/CD pipeline integration.",
+    "pricing_model_shift": "Expanded free tier to 200 tests/month (up from 100). Enterprise plans now include SBOM generation. Indicates PLG motion to land developers, then expand to enterprise."
+  },
+  "engineering_capacity": {
+    "total_updates_shipped": 47,
+    "new_features_vs_maintenance_ratio": "65/35",
+    "velocity_assessment": "High — consistent weekly releases with major features shipping every 2-3 weeks"
+  },
+  "resource_allocation": [
+    {
+      "bucket": "Core Platform & UX",
+      "effort_pct": 35,
+      "key_items": ["Unified dashboard redesign", "Project grouping by team", "Custom severity policies", "SBOM export enhancements"]
+    },
+    {
+      "bucket": "AI & Automation",
+      "effort_pct": 25,
+      "key_items": ["DeepCode AI fix suggestions", "Auto-PR generation for fixes", "AI-powered vulnerability prioritization"]
+    },
+    {
+      "bucket": "Integrations & Ecosystem",
+      "effort_pct": 25,
+      "key_items": ["ServiceNow CMDB sync", "Azure DevOps pipeline scanner", "GitHub Advanced Security interop", "Backstage plugin"]
+    },
+    {
+      "bucket": "Admin & Compliance",
+      "effort_pct": 15,
+      "key_items": ["SOC2 audit logging", "SSO improvements", "Role-based access granularity"]
+    }
+  ],
+  "intelligence_signals": {
+    "job_board_signals": "Heavy hiring for ML engineers (12 open roles), platform engineers, and developer advocates. Minimal security researcher hiring suggests reliance on vulnerability database partnerships.",
+    "target_users": "Platform engineers, DevOps leads, and application security champions within engineering teams",
+    "monetization_approach": "Freemium PLG with enterprise upsell. Free tier acts as developer acquisition funnel. Revenue growth from enterprise SSO, custom policies, and API access tiers.",
+    "differentiators": "Developer-first UX, largest vulnerability database, AI-powered fix suggestions, deep IDE integration. Snyk's moat is developer adoption at scale."
+  },
+  "securin_implications": {
+    "gaps_exposed": [
+      "No AI-powered fix suggestion capability in Securin ASPM",
+      "Limited IDE/developer workflow integration",
+      "SBOM generation not as mature",
+      "No PLG/freemium motion to capture developer mindshare"
+    ],
+    "areas_of_focus": [
+      "Build developer-facing fix recommendations in ASPM",
+      "Invest in CI/CD pipeline integration depth",
+      "Consider SBOM-as-a-feature in Core VI"
+    ],
+    "threat_level": "high",
+    "product_specific": {
+      "ASPM": "Snyk's AI fix suggestions and developer UX set a high bar — Securin ASPM needs developer experience investment",
+      "Core (VI)": "Snyk's vulnerability database breadth and prioritization AI are competitive threats to VI's value proposition"
+    }
+  }
+}

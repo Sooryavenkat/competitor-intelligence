@@ -1,0 +1,82 @@
+{
+  "competitors": [
+    {
+      "slug": "snyk",
+      "name": "Snyk",
+      "website": "https://snyk.io/",
+      "securin_overlap": ["ASPM", "Developer Security"],
+      "sources": {
+        "changelog": "https://snyk.io/changelog/",
+        "blog": "https://snyk.io/blog/",
+        "pricing": "https://snyk.io/plans/",
+        "careers": "https://snyk.io/careers/"
+      }
+    },
+    {
+      "slug": "panther",
+      "name": "Panther",
+      "website": "https://panther.com/",
+      "securin_overlap": ["SIEM", "Detection"],
+      "sources": {
+        "changelog": "https://docs.panther.com/changelog",
+        "blog": "https://panther.com/blog/",
+        "pricing": "https://panther.com/pricing/",
+        "careers": "https://panther.com/careers/"
+      }
+    },
+    {
+      "slug": "horizon3",
+      "name": "Horizon3.ai / NodeZero",
+      "website": "https://www.horizon3.ai/",
+      "securin_overlap": ["Pentesting", "EASM"],
+      "sources": {
+        "changelog": "https://www.horizon3.ai/nodezero-release-notes/",
+        "blog": "https://www.horizon3.ai/resources/blogs/",
+        "pricing": "https://www.horizon3.ai/pricing/",
+        "careers": "https://www.horizon3.ai/company/careers/"
+      }
+    },
+    {
+      "slug": "limacharlie",
+      "name": "LimaCharlie",
+      "website": "https://limacharlie.io/",
+      "securin_overlap": ["Platform", "SecOps"],
+      "sources": {
+        "changelog": "https://doc.limacharlie.io/docs/changelog",
+        "blog": "https://limacharlie.io/blog/",
+        "pricing": "https://limacharlie.io/pricing/",
+        "careers": "https://limacharlie.io/careers/"
+      }
+    },
+    {
+      "slug": "picus",
+      "name": "Picus Security",
+      "website": "https://www.picussecurity.com/",
+      "securin_overlap": ["BAS", "Threat Simulation"],
+      "sources": {
+        "changelog": "https://www.picussecurity.com/resource/blog",
+        "blog": "https://www.picussecurity.com/resource/blog",
+        "pricing": "https://www.picussecurity.com/pricing",
+        "careers": "https://www.picussecurity.com/careers"
+      }
+    },
+    {
+      "slug": "cycognito",
+      "name": "CyCognito",
+      "website": "https://www.cycognito.com/",
+      "securin_overlap": ["EASM", "ASM"],
+      "sources": {
+        "changelog": "https://www.cycognito.com/resources/",
+        "blog": "https://www.cycognito.com/blog/",
+        "pricing": "https://www.cycognito.com/pricing/",
+        "careers": "https://www.cycognito.com/careers/"
+      }
+    }
+  ],
+  "analysis_config": {
+    "quarters_back": 2,
+    "quarters_forward": 2,
+    "output_dir": "data",
+    "securin_products": ["ASM", "Sentry (EASM)", "Triage (UVM)", "Core (VI)", "CSPM", "ASPM", "APT"]
+  }
+}

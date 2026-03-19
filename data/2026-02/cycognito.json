@@ -1,0 +1,52 @@
+{
+  "competitor": "CyCognito",
+  "analysis_month": "2026-02",
+  "executive_strategic_insight": {
+    "core_theme": "Launching automated web application testing as natural extension of EASM discovery",
+    "strategic_focus": "CyCognito added DAST-like automated web application testing to their EASM platform. Find the asset, then automatically test it for vulnerabilities — closing the discovery-to-validation loop.",
+    "ecosystem_momentum": "7 integrations added including Jira ticketing, Azure Sentinel, and custom webhook support.",
+    "persona_shift": "AppSec teams alongside traditional EASM security operations buyers",
+    "pricing_model_shift": "Web app testing as add-on module to base EASM subscription"
+  },
+  "engineering_capacity": {
+    "total_updates_shipped": 20,
+    "new_features_vs_maintenance_ratio": "75/25",
+    "velocity_assessment": "High — aggressive feature expansion into adjacent categories"
+  },
+  "resource_allocation": [
+    {
+      "bucket": "Web App Testing",
+      "effort_pct": 40,
+      "key_items": ["DAST scanning engine", "API endpoint discovery", "Authentication-aware testing", "OWASP Top 10 coverage"]
+    },
+    {
+      "bucket": "Core EASM",
+      "effort_pct": 30,
+      "key_items": ["DNS enumeration improvements", "Certificate transparency monitoring", "Cloud asset fingerprinting"]
+    },
+    {
+      "bucket": "AI & Analytics",
+      "effort_pct": 20,
+      "key_items": ["Asset classification ML model v2", "Risk prediction engine", "Anomaly detection for new assets"]
+    },
+    {
+      "bucket": "Integrations",
+      "effort_pct": 10,
+      "key_items": ["Jira bi-directional", "Azure Sentinel alerts", "Custom webhooks"]
+    }
+  ],
+  "intelligence_signals": {
+    "job_board_signals": "Hiring web security researchers and AppSec engineers — confirms web app testing investment",
+    "target_users": "Security operations and application security teams",
+    "monetization_approach": "Module-based expansion revenue from existing EASM customers",
+    "differentiators": "Discover + test in one platform without needing separate DAST tools"
+  },
+  "securin_implications": {
+    "gaps_exposed": ["No integrated DAST/web app testing in Sentry EASM", "Missing discovery-to-validation workflow"],
+    "areas_of_focus": ["Add basic web app testing to Sentry EASM", "Build asset-to-vulnerability correlation"],
+    "threat_level": "high",
+    "product_specific": {
+      "Sentry (EASM)": "CyCognito's DAST addition makes their EASM significantly more actionable than Sentry's current passive scanning"
+    }
+  }
+}

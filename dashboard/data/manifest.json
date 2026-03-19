@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-03-18T21:53:01.227889",
+  "competitors": [
+    {
+      "slug": "snyk",
+      "name": "Snyk",
+      "securin_overlap": [
+        "ASPM",
+        "Developer Security"
+      ]
+    },
+    {
+      "slug": "panther",
+      "name": "Panther",
+      "securin_overlap": [
+        "SIEM",
+        "Detection"
+      ]
+    },
+    {
+      "slug": "horizon3",
+      "name": "Horizon3.ai / NodeZero",
+      "securin_overlap": [
+        "Pentesting",
+        "EASM"
+      ]
+    },
+    {
+      "slug": "limacharlie",
+      "name": "LimaCharlie",
+      "securin_overlap": [
+        "Platform",
+        "SecOps"
+      ]
+    },
+    {
+      "slug": "picus",
+      "name": "Picus Security",
+      "securin_overlap": [
+        "BAS",
+        "Threat Simulation"
+      ]
+    },
+    {
+      "slug": "cycognito",
+      "name": "CyCognito",
+      "securin_overlap": [
+        "EASM",
+        "ASM"
+      ]
+    }
+  ],
+  "months": [
+    "2026-03",
+    "2026-02"
+  ],
+  "month_data": {
+    "2026-03": {
+      "competitors": [
+        "cycognito",
+        "horizon3",
+        "limacharlie",
+        "panther",
+        "picus",
+        "snyk"
+      ],
+      "has_insights": true
+    },
+    "2026-02": {
+      "competitors": [
+        "cycognito",
+        "snyk"
+      ],
+      "has_insights": false
+    }
+  }
+}

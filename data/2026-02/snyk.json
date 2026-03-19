@@ -1,0 +1,53 @@
+{
+  "competitor": "Snyk",
+  "analysis_month": "2026-02",
+  "executive_strategic_insight": {
+    "core_theme": "Container security push — expanding from code scanning to full container lifecycle security",
+    "strategic_focus": "Snyk invested heavily in container image scanning, Kubernetes admission controllers, and IaC (Infrastructure as Code) security. Expanding the 'shift left' narrative from code to infrastructure.",
+    "ecosystem_momentum": "10 new integrations focused on container orchestration platforms and cloud providers.",
+    "persona_shift": "Platform engineering teams managing Kubernetes clusters and cloud infrastructure",
+    "pricing_model_shift": "Stable — no major pricing changes observed this month"
+  },
+  "engineering_capacity": {
+    "total_updates_shipped": 42,
+    "new_features_vs_maintenance_ratio": "60/40",
+    "velocity_assessment": "High — consistent release cadence maintained"
+  },
+  "resource_allocation": [
+    {
+      "bucket": "Container Security",
+      "effort_pct": 35,
+      "key_items": ["Container image scanning v2", "Kubernetes admission controller", "Runtime container monitoring", "Base image recommendations"]
+    },
+    {
+      "bucket": "IaC Security",
+      "effort_pct": 25,
+      "key_items": ["Terraform scanning improvements", "CloudFormation drift detection", "Pulumi support", "Custom IaC rules"]
+    },
+    {
+      "bucket": "Core Platform",
+      "effort_pct": 25,
+      "key_items": ["Performance optimizations", "Reporting enhancements", "API rate limit increases"]
+    },
+    {
+      "bucket": "Integrations",
+      "effort_pct": 15,
+      "key_items": ["AWS ECR scanning", "Google Artifact Registry", "ArgoCD integration"]
+    }
+  ],
+  "intelligence_signals": {
+    "job_board_signals": "Hiring container security researchers and cloud infrastructure engineers",
+    "target_users": "Platform engineers and DevOps teams managing cloud-native infrastructure",
+    "monetization_approach": "Container security as premium add-on tier driving upsell",
+    "differentiators": "End-to-end from code to container to cloud in a single platform"
+  },
+  "securin_implications": {
+    "gaps_exposed": ["No container security offering", "No IaC scanning capability"],
+    "areas_of_focus": ["Evaluate container security as CSPM extension", "IaC security for ASPM pipeline"],
+    "threat_level": "high",
+    "product_specific": {
+      "ASPM": "Snyk's IaC scanning extends their ASPM-like coverage further left than Securin's current capabilities",
+      "CSPM": "Container security and cloud infrastructure scanning overlap with CSPM scope"
+    }
+  }
+}
