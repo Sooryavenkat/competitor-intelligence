@@ -2,61 +2,63 @@
   "competitor": "Picus Security",
   "analysis_month": "2026-03",
   "executive_strategic_insight": {
-    "core_theme": "Expanding from BAS into complete security validation platform — attack simulation plus exposure management",
-    "strategic_focus": "Picus is broadening beyond breach & attack simulation to include attack surface management and security posture validation. They want to be the 'prove your security works' platform. Major push into AI-driven attack scenario generation.",
-    "ecosystem_momentum": "12 new vendor integrations for security control validation (Palo Alto, Fortinet, CrowdStrike). Building the 'validate your existing tools' narrative.",
-    "persona_shift": "Moving from red team operators to security operations managers and CISOs who need to justify security spend with measurable validation.",
-    "pricing_model_shift": "Annual platform license with module-based upsell (BAS core + Attack Surface + Posture Management). Enterprise pricing, no self-serve."
+    "core_theme": "Expanding BAS use cases beyond security teams into cyber insurance and financial regulatory compliance — proving security control effectiveness for business stakeholders",
+    "strategic_focus": "Picus is broadening BAS from a red team tool to a business risk management tool. Key moves: BAS for cyber insurance (prove controls work to lower premiums), financial regulatory compliance (Bank Negara Malaysia's RMiT), and deep MITRE ATT&CK educational content to establish authority. They're making security validation a business language tool, not just a technical one.",
+    "ecosystem_momentum": "Content library of 200+ posts across 23 pages signals massive thought leadership investment. MITRE ATT&CK technique-by-technique coverage (T1219.001, T1071.004) builds SEO dominance for security validation searches. Regulatory compliance content for financial markets (Malaysia) suggests APAC expansion.",
+    "persona_shift": "Moving beyond red team operators to cyber insurance underwriters, GRC teams, financial compliance officers, and CISOs justifying security budgets. BAS as a business tool, not just a security tool.",
+    "pricing_model_shift": "Insufficient direct pricing data. Enterprise platform licensing with module-based upsell model likely maintained."
   },
   "engineering_capacity": {
-    "total_updates_shipped": 22,
-    "new_features_vs_maintenance_ratio": "60/40",
-    "velocity_assessment": "Medium — monthly releases with steady feature expansion into adjacent categories"
+    "total_updates_shipped": "22+",
+    "new_features_vs_maintenance_ratio": "55/45",
+    "velocity_assessment": "Medium — significant content output (200+ article library) suggests investment balanced between product engineering and thought leadership/marketing"
   },
   "resource_allocation": [
     {
-      "bucket": "BAS Core Engine",
+      "bucket": "BAS Core Engine & Threat Library",
       "effort_pct": 35,
-      "key_items": ["AI-generated attack scenarios", "APT group simulation packs", "Lateral movement simulation", "Cloud attack paths"]
+      "key_items": ["IDE tunneling simulation (T1219.001)", "DNS attack techniques (T1071.004)", "Fileless malware simulation", "APT group attack packs"]
     },
     {
-      "bucket": "Attack Surface Management",
+      "bucket": "Compliance & Insurance",
       "effort_pct": 25,
-      "key_items": ["External attack surface discovery", "Exposure prioritization by exploitability", "Asset-to-attack-path mapping"]
+      "key_items": ["BAS for cyber insurance premium reduction", "Bank Negara Malaysia RMiT compliance", "Control effectiveness evidence generation", "Financial sector regulatory mapping"]
     },
     {
-      "bucket": "Security Control Validation",
+      "bucket": "Thought Leadership & Content",
       "effort_pct": 25,
-      "key_items": ["Firewall rule validation", "EDR detection gap analysis", "SIEM rule effectiveness scoring", "Vendor-specific validation modules"]
+      "key_items": ["200+ article content library", "MITRE ATT&CK technique-by-technique guides", "Security validation education", "Threat glossary expansion"]
     },
     {
       "bucket": "Platform & UX",
       "effort_pct": 15,
-      "key_items": ["Executive reporting dashboard", "Risk score trending", "Multi-site management"]
+      "key_items": ["Estimated: reporting dashboard improvements", "Control effectiveness scoring", "Multi-site management"]
     }
   ],
   "intelligence_signals": {
-    "job_board_signals": "Hiring threat researchers, enterprise account executives, and product managers. Sales expansion suggests Series B/C growth into enterprise segment.",
-    "target_users": "CISOs, security operations managers, and GRC teams needing security effectiveness metrics",
-    "monetization_approach": "Enterprise platform licensing. Land with BAS, expand with Attack Surface and Posture Management modules. Large deal sizes ($150K-500K ARR).",
-    "differentiators": "Unique combination of attack simulation + security control validation. Proves whether defenses actually work against specific threats. Strong APT simulation library."
+    "job_board_signals": "Insufficient data from public scrape. Content output volume suggests investment in content marketing and technical writing alongside product engineering.",
+    "target_users": "CISOs justifying security budgets, GRC teams, cyber insurance buyers/underwriters, financial compliance officers in APAC markets, security operations managers needing control effectiveness metrics",
+    "monetization_approach": "Enterprise platform licensing. Expanding TAM by positioning BAS as a cyber insurance and regulatory compliance tool — opens new budget categories beyond traditional security spend.",
+    "differentiators": "Unique BAS-to-insurance pipeline (prove controls work → lower premiums). Deepest MITRE ATT&CK content library in the market. Financial regulatory compliance positioning. Making security validation a business language."
   },
   "securin_implications": {
     "gaps_exposed": [
       "Securin has no breach & attack simulation capability",
-      "No security control validation (does your firewall actually block X?)",
-      "Missing 'prove it works' narrative for security posture"
+      "No security control validation (does your firewall actually block this attack?)",
+      "Missing 'prove it works' narrative for insurance/compliance stakeholders",
+      "No cyber insurance integration or premium reduction story"
     ],
     "areas_of_focus": [
-      "Consider BAS partnership or build — customers increasingly want validation, not just detection",
-      "Add exploitability context to Sentry EASM and Triage UVM findings",
-      "Build 'security effectiveness scoring' into platform reporting"
+      "Consider BAS partnership — customers increasingly want validation, not just detection",
+      "Add control effectiveness context to vulnerability findings (is this vuln mitigated by existing controls?)",
+      "Build cyber insurance readiness reporting across platform",
+      "Explore APAC regulatory compliance mapping for financial sector customers"
     ],
     "threat_level": "medium",
     "product_specific": {
-      "Sentry (EASM)": "Picus is building external ASM that directly competes with Sentry, with the added value of attack simulation",
-      "Triage (UVM)": "Their exploitability-based prioritization overlaps with Triage's vulnerability management",
-      "APT": "Picus APT simulation packs are a different approach to the same threat intelligence Securin APT provides"
+      "Sentry (EASM)": "Picus building external attack simulation that competes with EASM plus adds validation — more actionable than passive scanning.",
+      "Triage (UVM)": "Their exploitability-based prioritization with control validation overlaps with vulnerability management.",
+      "APT": "Picus ATT&CK technique library and APT simulation packs are a different approach to the same threat intelligence APT provides."
     }
   }
 }

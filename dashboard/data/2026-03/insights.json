@@ -1,36 +1,41 @@
 {
   "month": "2026-03",
   "industry_themes": [
-    "AI-powered remediation and fix suggestions becoming table stakes",
-    "Shift from passive detection to active security validation",
-    "Platform/infrastructure plays winning over point solutions",
-    "CISO/board-ready risk quantification demand growing",
-    "MSSP and channel partner enablement as growth lever"
+    "AI/Agentic security is the defining theme — Snyk launching AI Security Fabric, LimaCharlie building Agentic SOC-as-Code, both reshaping their categories around AI",
+    "Shift from passive detection to active validation accelerating — Horizon3 continuous validation, CyCognito automated testing, Picus control effectiveness proving",
+    "Security as a business language tool — Picus BAS for insurance premiums, CyCognito risk quantification for boards, Horizon3 blast radius for risk-focused buyers",
+    "Federal/compliance as growth lever — Horizon3 FedRAMP/CMMC, Picus financial regulatory compliance (APAC), Snyk FedRAMP Enterprise tier",
+    "Analyst recognition driving enterprise procurement — CyCognito GigaOm Leader across 32 vendors, positioning as market standard"
   ],
   "hottest_investment_areas": [
     {
-      "area": "AI-Assisted Security",
-      "competitors_investing": ["Snyk", "CyCognito", "Picus Security"],
+      "area": "AI/Agentic Security Operations",
+      "competitors_investing": ["Snyk", "LimaCharlie"],
       "intensity": "high"
     },
     {
-      "area": "Attack Surface Validation",
+      "area": "Continuous Security Validation",
       "competitors_investing": ["Horizon3.ai", "Picus Security", "CyCognito"],
       "intensity": "high"
     },
     {
-      "area": "Developer Experience",
-      "competitors_investing": ["Snyk", "LimaCharlie"],
+      "area": "Rapid CVE/Threat Intelligence Content",
+      "competitors_investing": ["CyCognito", "Horizon3.ai", "Snyk"],
+      "intensity": "high"
+    },
+    {
+      "area": "Compliance & Regulatory Mapping",
+      "competitors_investing": ["Horizon3.ai", "Picus Security", "Snyk"],
       "intensity": "medium"
     },
     {
-      "area": "Compliance Reporting",
-      "competitors_investing": ["Horizon3.ai", "Picus Security", "CyCognito"],
+      "area": "Cyber Insurance Integration",
+      "competitors_investing": ["Picus Security"],
       "intensity": "medium"
     },
     {
       "area": "MSSP/Channel Enablement",
-      "competitors_investing": ["LimaCharlie", "Picus Security"],
+      "competitors_investing": ["LimaCharlie"],
       "intensity": "medium"
     }
   ],
@@ -38,41 +43,41 @@
     {
       "securin_product": "Sentry (EASM)",
       "urgency": "high",
-      "competitors_ahead": ["CyCognito", "Picus Security", "Horizon3.ai"],
-      "recommended_action": "Add automated security testing beyond passive scanning. CyCognito's business context-aware prioritization and Picus's attack simulation set a higher bar. Prioritize exploitability validation."
+      "competitors_ahead": ["CyCognito", "Horizon3.ai", "Picus Security"],
+      "recommended_action": "CyCognito is GigaOm Leader across 32 ASM vendors — Sentry needs analyst recognition investment and differentiation strategy. Add automated testing beyond passive scanning. Horizon3 proves exploitability where Sentry only finds exposure. Invest in analyst relations and active validation capabilities."
     },
     {
       "securin_product": "ASPM",
       "urgency": "high",
       "competitors_ahead": ["Snyk"],
-      "recommended_action": "Invest in developer-facing fix recommendations and CI/CD pipeline integration. Snyk's AI-powered fix suggestions and IDE integrations are setting the standard for developer security experience."
+      "recommended_action": "Snyk has pivoted to AI/agentic security with AI Security Fabric and Evo platform. Their Ignite tier offers DAST + SAST + SCA at $1,260/yr — aggressive mid-market pricing. Securin ASPM needs to decide: compete on AI security or differentiate on enterprise depth. At minimum, add AI-generated code awareness."
     },
     {
       "securin_product": "Core (VI)",
       "urgency": "medium",
       "competitors_ahead": ["Snyk", "CyCognito"],
-      "recommended_action": "Enhance vulnerability prioritization with business context and exploitability data. Snyk's AI prioritization and CyCognito's risk quantification are redefining what customers expect."
+      "recommended_action": "Both Snyk (AI vulnerability research) and CyCognito (rapid CVE response content) are building threat intelligence credibility that competes with VI. CyCognito published 3 critical CVE analyses in 2 weeks. VI should leverage its depth advantage but needs faster public-facing CVE response."
     },
     {
       "securin_product": "APT",
       "urgency": "medium",
-      "competitors_ahead": ["Picus Security"],
-      "recommended_action": "Consider adding threat simulation capabilities or partnering with BAS vendors. Picus's APT group simulation packs provide actionable threat context that goes beyond intelligence feeds."
+      "competitors_ahead": ["Picus Security", "Horizon3.ai"],
+      "recommended_action": "Picus has the deepest MITRE ATT&CK content library (200+ articles, technique-by-technique) and APT simulation packs. Horizon3 provides geopolitical threat briefings (Iranian cyber operators). APT should differentiate on actionable intelligence depth vs simulation."
     },
     {
       "securin_product": "ASM",
       "urgency": "medium",
       "competitors_ahead": ["CyCognito"],
-      "recommended_action": "Improve unknown asset discovery and add M&A/subsidiary asset discovery capabilities. CyCognito's comprehensive discovery including shadow IT sets a higher bar."
+      "recommended_action": "CyCognito's enterprise infrastructure focus (HPE switches, Cisco firewalls, SQL servers — not just web assets) and GigaOm recognition set a higher bar. ASM should expand discovery to enterprise infrastructure and invest in analyst visibility."
     },
     {
       "securin_product": "Platform",
       "urgency": "low",
       "competitors_ahead": ["LimaCharlie"],
-      "recommended_action": "Evaluate whether Securin should offer white-label or MSSP-ready packaging. LimaCharlie's platform approach captures the build-your-own-security market that Securin doesn't address."
+      "recommended_action": "LimaCharlie's Agentic SOC-as-Code with AI agents executing operations sets the future bar for security platforms. Securin should evaluate AI automation for platform operations (auto-triage, auto-prioritize) and API-first architecture investment."
     }
   ],
-  "talent_war_signals": "AI/ML engineering talent is the hottest hire across the sector (Snyk: 12 ML roles, CyCognito: ML engineers, Picus: threat researchers). Companies are building in-house AI capabilities rather than buying. Enterprise sales hiring is strong across Horizon3, Picus, and CyCognito — suggesting the market is moving to larger deal sizes. LimaCharlie's developer-led growth contrasts with the rest, representing a different GTM philosophy.",
-  "pricing_trends": "Clear split between PLG (Snyk, LimaCharlie) and enterprise-first (Panther, Picus, CyCognito, Horizon3). Snyk expanding free tier while CyCognito adds mid-market tier — both trying to expand TAM from different directions. Usage-based pricing gaining traction (Panther, LimaCharlie). Unlimited-use models emerging for continuous security tools (Horizon3).",
-  "overall_threat_assessment": "The cybersecurity competitive landscape is rapidly consolidating around three themes: AI-assisted security operations, continuous validation (not just detection), and platform/ecosystem plays. For Securin, the most urgent threats come from Snyk (ASPM developer experience gap) and CyCognito (EASM automated testing gap). The medium-term threat is the industry-wide shift from passive scanning to active validation — Horizon3 and Picus represent this trend. Securin's strength remains in vulnerability intelligence depth and multi-product breadth, but individual products face feature parity pressure from specialized competitors. Recommended strategy: invest heavily in AI-assisted remediation for ASPM and automated validation for EASM in the next two quarters, while building a cross-product business risk quantification layer that leverages Securin's unique multi-product data advantage."
+  "talent_war_signals": "AI/ML engineering is the hottest hire across the sector. Snyk is building an entire 'AI Security' division (SF Innovation Hub, Emerging Talent programs). LimaCharlie is likely hiring AI engineers for agentic capabilities despite small team size. The industry is splitting: companies building AI security products (Snyk) vs companies using AI to automate security operations (LimaCharlie). Both approaches require ML talent. Horizon3 and CyCognito appear focused on offensive security researchers and content/analyst relations respectively.",
+  "pricing_trends": "Snyk's new Ignite tier ($1,260/yr per developer) with DAST is the most significant pricing move — creates a mid-market offering that undercuts traditional enterprise security platforms. LimaCharlie maintains the most transparent pricing ($3/sensor, $0.20/GB). The split between PLG (Snyk free tier, LimaCharlie community) and enterprise-first (CyCognito, Horizon3, Picus) persists. New trend: security validation as business ROI tool (Picus for insurance, CyCognito for analyst-validated procurement) enables premium pricing justified by non-security budgets.",
+  "overall_threat_assessment": "March 2026 marks a category-defining moment in cybersecurity. Two macro trends dominate: (1) AI is reshaping both what security companies build and how they operate — Snyk is securing AI agents while LimaCharlie uses AI agents to do security, and (2) the industry is moving from detection to validation — finding problems is table stakes, proving they're exploitable and proving fixes work is the new bar. For Securin, the most urgent threats are Snyk (ASPM category redefinition around AI security) and CyCognito (EASM market leadership confirmed by GigaOm across 32 vendors). The medium-term strategic risk is the validation gap: Horizon3, Picus, and CyCognito all prove security posture while Securin reports on it. Securin's multi-product breadth remains a differentiator, but each individual product faces feature parity pressure. Recommended Q2-Q3 2026 priorities: (1) Analyst relations investment for Sentry EASM, (2) AI-awareness in ASPM pipeline, (3) Rapid CVE response content leveraging VI depth, (4) Explore validation partnerships (BAS/pentest) to close the detection-to-validation gap."
 }

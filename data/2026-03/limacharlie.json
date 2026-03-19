@@ -2,60 +2,62 @@
   "competitor": "LimaCharlie",
   "analysis_month": "2026-03",
   "executive_strategic_insight": {
-    "core_theme": "Becoming the AWS of cybersecurity — infrastructure primitives for MSSPs and security teams to build custom security stacks",
-    "strategic_focus": "LimaCharlie is positioning as a security infrastructure platform rather than a product. They provide telemetry collection, detection, response, and automation as composable building blocks. Their bet is that security teams want to build, not buy.",
-    "ecosystem_momentum": "Platform-first approach means the 'ecosystem' IS the product. 200+ detection rules in community marketplace. API-first design with full REST/gRPC coverage.",
-    "persona_shift": "Targeting MSSPs and security-mature organizations that want to build differentiated security offerings on top of shared infrastructure.",
-    "pricing_model_shift": "Pure usage-based (per-sensor, per-event). No minimum commitment. Designed for MSSPs to white-label and resell with margin."
+    "core_theme": "Going all-in on Agentic SOC — AI agents that execute security operations autonomously, not just advise",
+    "strategic_focus": "LimaCharlie is positioning as the infrastructure layer for AI-driven security operations. Their Agentic SOC-as-Code approach provides deployment models (Baselining, Lean, Tiered) for customers to right-size AI involvement. AI agents can now configure tenants, suppress false positives, analyze MITRE coverage, and onboard cloud environments. They're benchmarking frontier models for SOC tasks.",
+    "ecosystem_momentum": "Platform-first approach continues. Detection-native case management launched. Git Sync for version-controlled configs. Multi-cloud onboarding automation. The ecosystem IS the product — API-first with AI agent governance.",
+    "persona_shift": "Targeting MSSPs and security teams ready for AI-automated operations. Agentic SecOps Workspace for teams wanting AI agents doing SOC work, not just augmenting analysts.",
+    "pricing_model_shift": "Pure usage-based maintained: $3/sensor/month, $0.20/GB telemetry, free outputs to GCS. Two free sensors for community. AI capabilities added at same price point — competing on capability density."
   },
   "engineering_capacity": {
-    "total_updates_shipped": 32,
-    "new_features_vs_maintenance_ratio": "60/40",
-    "velocity_assessment": "High — weekly releases, strong API surface expansion, community-driven detection content"
+    "total_updates_shipped": "35+",
+    "new_features_vs_maintenance_ratio": "75/25",
+    "velocity_assessment": "Very high — shipping agentic AI capabilities at startup speed. Case management, multiple agentic workflows, MITRE analysis, multi-cloud onboarding all in one quarter. Small team punching above weight."
   },
   "resource_allocation": [
     {
-      "bucket": "Core Platform Infrastructure",
-      "effort_pct": 40,
-      "key_items": ["Sensor performance optimization", "Linux/macOS agent stability", "Event pipeline scalability", "API v4 expansion"]
+      "bucket": "Agentic AI / SOC Automation",
+      "effort_pct": 45,
+      "key_items": ["Agentic SOC-as-Code deployment models", "Automated false positive suppression", "AI tenant provisioning", "Frontier model benchmarking for SOC", "MITRE ATT&CK coverage analysis via AI"]
     },
     {
-      "bucket": "Detection & Response",
-      "effort_pct": 30,
-      "key_items": ["YARA rule engine improvements", "Sigma rule support", "Automated response playbooks", "Threat feed ingestion"]
+      "bucket": "Core Platform & Detection",
+      "effort_pct": 25,
+      "key_items": ["Detection-native case management system", "Threat intelligence to live detections pipeline", "Git Sync for configuration version control"]
     },
     {
       "bucket": "MSSP & Multi-tenancy",
       "effort_pct": 20,
-      "key_items": ["White-label portal", "Multi-org management", "Usage billing APIs", "Reseller margin tools"]
+      "key_items": ["Rapid tenant provisioning with AI", "Cross-tenant visibility", "SLA management tools", "Multi-cloud onboarding"]
     },
     {
-      "bucket": "Integrations",
+      "bucket": "Cloud & Infrastructure",
       "effort_pct": 10,
-      "key_items": ["Slack alerting", "SOAR webhook support", "Splunk forwarder compatibility"]
+      "key_items": ["Multi-cloud environment automation", "Carbon Black EDR telemetry ($0.60/sensor)", "Agent governance framework"]
     }
   ],
   "intelligence_signals": {
-    "job_board_signals": "Small team (< 50). Hiring kernel engineers and distributed systems engineers. No sales team visible — community/developer-led growth.",
-    "target_users": "MSSPs, security-mature enterprises building custom SecOps, and security tool builders",
-    "monetization_approach": "Usage-based pricing with MSSP reseller model. Revenue grows as customers' sensor fleets grow. Low CAC via developer community.",
-    "differentiators": "Only true security infrastructure platform (not a product). Full API coverage, composable primitives, white-label ready. Competes by enabling rather than replacing."
+    "job_board_signals": "Small team (<50). Blog output suggests heavy engineering focus. Likely hiring AI/ML engineers given agentic pivot. Developer-led growth, no visible sales expansion.",
+    "target_users": "MSSPs wanting AI-augmented SOC services, security-mature enterprises building custom SecOps, detection engineers wanting programmable security infrastructure",
+    "monetization_approach": "Usage-based ($3/sensor, $0.20/GB) with MSSP white-label model. Revenue scales with customer sensor growth. AI capabilities at no extra cost — moat through capability density at low price.",
+    "differentiators": "Only platform offering Agentic SOC-as-Code with deployment models. AI agents execute operations, not just recommend. Infrastructure-level approach for differentiated security offerings. Transparent usage-based pricing."
   },
   "securin_implications": {
     "gaps_exposed": [
-      "Securin has no platform/infrastructure play for MSSPs",
-      "No white-label capability for channel partners",
-      "API coverage not as comprehensive for build-on-top use cases"
+      "Securin has no agentic AI automation for security operations",
+      "No SOC-as-Code or programmable security infrastructure",
+      "No MSSP white-label capability",
+      "No AI-driven MITRE coverage analysis"
     ],
     "areas_of_focus": [
-      "Evaluate MSSP/channel partner strategy — could Securin products be white-labeled?",
-      "Expand API surface for platform-style integrations",
-      "Consider LimaCharlie as potential integration partner (telemetry source for Securin analysis)"
+      "Watch Agentic SOC trend — may reshape how customers consume security platforms",
+      "Consider LimaCharlie as integration partner (telemetry source for Securin analysis)",
+      "Evaluate adding AI automation to platform operations (auto-triage, auto-prioritize)",
+      "API-first architecture investment needed for agentic workflows"
     ],
     "threat_level": "low",
     "product_specific": {
-      "ASM": "LimaCharlie's sensor-based asset discovery is complementary, not competitive, to Securin's agentless ASM",
-      "APT": "Their detection engine + threat feeds could overlap with APT threat intelligence if they build analysis layers"
+      "APT": "Threat-intel-to-live-detection pipeline could compete with APT if they build analysis layers. Currently complementary.",
+      "Platform": "Agentic SOC-as-Code sets a new bar for platform sophistication that Securin admin features should aspire toward."
     }
   }
 }

@@ -2,59 +2,58 @@
   "competitor": "Panther",
   "analysis_month": "2026-03",
   "executive_strategic_insight": {
-    "core_theme": "Pivoting from pure SIEM to unified security data platform with real-time detection-as-code",
-    "strategic_focus": "Panther is positioning as the modern alternative to Splunk/Sumo Logic, emphasizing serverless architecture, detection-as-code using Python, and cost transparency. They're moving upmarket toward enterprise SOCs.",
-    "ecosystem_momentum": "8 new data source integrations including CrowdStrike Falcon, SentinelOne, and Okta. Focus on security tool consolidation.",
-    "persona_shift": "Targeting security engineers and detection engineers specifically — building tools for teams that write detection logic, not just consume alerts.",
-    "pricing_model_shift": "Usage-based pricing (per GB ingested) with committed use discounts. No free tier — enterprise-first approach."
+    "core_theme": "Limited public signal this quarter — Panther's blog is JS-rendered with minimal crawlable content, suggesting either reduced public comms or a website rebuild in progress",
+    "strategic_focus": "Based on available data, Panther continues positioning as a modern cloud-native SIEM alternative with detection-as-code using Python. Their Framer-based website rebuild suggests investment in marketing/brand refresh. Prior positioning around serverless architecture and cost transparency likely maintained.",
+    "ecosystem_momentum": "Insufficient data from current scrape — website uses heavy JavaScript rendering that limits static content extraction. Prior quarter showed focus on CrowdStrike, SentinelOne, and Okta integrations.",
+    "persona_shift": "Likely still targeting detection engineers and security operations teams in cloud-native organizations.",
+    "pricing_model_shift": "Insufficient data — prior positioning was usage-based (per GB ingested) with committed use discounts."
   },
   "engineering_capacity": {
-    "total_updates_shipped": 28,
-    "new_features_vs_maintenance_ratio": "55/45",
-    "velocity_assessment": "Medium — bi-weekly releases, significant infrastructure investment reducing visible feature output"
+    "total_updates_shipped": "Insufficient data",
+    "new_features_vs_maintenance_ratio": "Insufficient data",
+    "velocity_assessment": "Unable to assess — JS-rendered changelog returned 404, blog content not extractable from static scrape"
   },
   "resource_allocation": [
     {
+      "bucket": "Website & Marketing",
+      "effort_pct": 20,
+      "key_items": ["Framer-based website rebuild", "Google Tag Manager + Hotjar analytics implementation"]
+    },
+    {
       "bucket": "Core Detection Engine",
-      "effort_pct": 40,
-      "key_items": ["Real-time detection pipeline overhaul", "Python detection SDK v3", "Correlation rules engine", "Alert deduplication"]
+      "effort_pct": 35,
+      "key_items": ["Estimated: continued Python detection SDK development", "Real-time detection pipeline"]
     },
     {
       "bucket": "Data Platform",
       "effort_pct": 30,
-      "key_items": ["Snowflake data lake integration", "Log schema normalization", "Data retention policies", "Query performance optimization"]
+      "key_items": ["Estimated: log ingestion and normalization improvements", "Query performance"]
     },
     {
       "bucket": "Integrations",
-      "effort_pct": 20,
-      "key_items": ["CrowdStrike bi-directional sync", "SentinelOne log ingestion", "Okta event streaming", "PagerDuty alerting"]
-    },
-    {
-      "bucket": "Admin & Compliance",
-      "effort_pct": 10,
-      "key_items": ["RBAC enhancements", "Audit trail improvements"]
+      "effort_pct": 15,
+      "key_items": ["Estimated: continued security tool data source expansion"]
     }
   ],
   "intelligence_signals": {
-    "job_board_signals": "Hiring senior backend engineers (Go), data engineers, and field CTOs. No junior roles visible — suggests mature team optimizing, not scaling broadly.",
-    "target_users": "Detection engineers, security operations teams, and cloud-native security architects",
-    "monetization_approach": "Enterprise SaaS with usage-based component. Large deal sizes ($200K+ ARR) targeting companies doing 1TB+/day log ingestion.",
-    "differentiators": "Serverless architecture (no infrastructure management), detection-as-code (Python), transparent pricing model. Competes on cost efficiency vs legacy SIEMs."
+    "job_board_signals": "Insufficient data from public scrape this month.",
+    "target_users": "Detection engineers, security operations teams, cloud-native security architects",
+    "monetization_approach": "Enterprise SaaS with usage-based component. Likely continuing large deal focus ($200K+ ARR).",
+    "differentiators": "Serverless architecture, detection-as-code (Python), cost transparency vs legacy SIEMs."
   },
   "securin_implications": {
     "gaps_exposed": [
-      "Securin has no SIEM/detection capability",
-      "No log ingestion or correlation features",
-      "Detection-as-code is a paradigm Securin doesn't address"
+      "Securin has no SIEM/detection capability (unchanged from prior assessment)",
+      "No log ingestion or correlation features"
     ],
     "areas_of_focus": [
-      "Consider SIEM integration partnerships rather than building",
-      "Ensure Securin data can feed into Panther-like platforms via standard formats"
+      "SIEM remains outside Securin's core — partnership strategy more appropriate than build",
+      "Ensure Securin data exports are SIEM-compatible for customers using Panther-like platforms"
     ],
     "threat_level": "low",
     "product_specific": {
-      "APT": "Panther's detection engine could compete with APT threat detection if they expand into threat intelligence",
-      "CSPM": "Panther's cloud log analysis overlaps with CSPM cloud security monitoring"
+      "APT": "Panther's detection engine remains complementary — could compete with APT only if they add threat intelligence analysis layers.",
+      "CSPM": "Cloud log analysis has some overlap with CSPM cloud monitoring."
     }
   }
 }

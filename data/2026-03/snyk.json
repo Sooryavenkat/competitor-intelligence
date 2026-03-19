@@ -2,61 +2,63 @@
   "competitor": "Snyk",
   "analysis_month": "2026-03",
   "executive_strategic_insight": {
-    "core_theme": "Doubling down on AI-assisted remediation to shift from detection to developer-first fix workflows",
-    "strategic_focus": "Snyk is heavily investing in AI-powered code fix suggestions, expanding SBOM capabilities, and deepening IDE integrations. Their strategy is to own the developer workflow from code to cloud, with security embedded invisibly.",
-    "ecosystem_momentum": "15+ new integrations this quarter including ServiceNow, Jira Cloud, and Azure DevOps pipelines. Total ecosystem now exceeds 100 integrations.",
-    "persona_shift": "Shifting from security teams to platform engineering and DevOps leads. New features target developer experience and CI/CD pipeline integration.",
-    "pricing_model_shift": "Expanded free tier to 200 tests/month (up from 100). Enterprise plans now include SBOM generation. Indicates PLG motion to land developers, then expand to enterprise."
+    "core_theme": "Pivoting from developer security to AI/agentic security — becoming the security layer for AI-generated code and autonomous coding agents",
+    "strategic_focus": "Snyk is aggressively repositioning as the AI security company. Their 'AI Security Fabric' launch and Evo orchestration platform signal a platform play for securing agentic AI workflows. Research output on prompt injection, toxic skills, and supply chain attacks on AI agents (1,467 vulnerable skills, 76 malicious payloads identified) establishes thought leadership. Partnerships with Vercel, Cline, Tessl, and uv show ecosystem expansion into the AI developer toolchain.",
+    "ecosystem_momentum": "Major new partnerships with Vercel (AI skill ecosystem), Tessl (agent skills registry), Cline (autonomous coding security), and uv (Python package manager). Integration ecosystem expanding specifically around AI/agentic developer tools rather than traditional DevOps.",
+    "persona_shift": "Defining a new buyer: the 'AI Security Engineer'. Targeting developers and platform teams building with AI coding agents (Cursor, Claude Code, Cline). Shifting from traditional AppSec to securing AI-assisted development workflows.",
+    "pricing_model_shift": "Free tier maintained at 200 SCA / 100 SAST / 300 IaC tests per month. New 'Ignite' tier at $1,260/year per developer bridges Team ($25/mo) and Enterprise. Ignite includes 10 DAST targets and advanced risk factors — signals move toward consolidated platform pricing. Enterprise adds FedRAMP, data residency (US/EU/AUS), and Snyk Broker."
   },
   "engineering_capacity": {
-    "total_updates_shipped": 47,
-    "new_features_vs_maintenance_ratio": "65/35",
-    "velocity_assessment": "High — consistent weekly releases with major features shipping every 2-3 weeks"
+    "total_updates_shipped": "50+",
+    "new_features_vs_maintenance_ratio": "70/30",
+    "velocity_assessment": "Very high — launched AI Security Fabric, Evo platform, published 5+ major security research pieces, and announced 4 strategic partnerships in a single quarter"
   },
   "resource_allocation": [
     {
-      "bucket": "Core Platform & UX",
-      "effort_pct": 35,
-      "key_items": ["Unified dashboard redesign", "Project grouping by team", "Custom severity policies", "SBOM export enhancements"]
+      "bucket": "AI & Agentic Security",
+      "effort_pct": 40,
+      "key_items": ["AI Security Fabric platform launch", "Evo orchestration for agentic security", "ToxicSkills research (36% prompt injection rate)", "Claude Code security analysis", "Cursor agent prompt security research"]
     },
     {
-      "bucket": "AI & Automation",
+      "bucket": "Partnerships & Ecosystem",
       "effort_pct": 25,
-      "key_items": ["DeepCode AI fix suggestions", "Auto-PR generation for fixes", "AI-powered vulnerability prioritization"]
+      "key_items": ["Vercel AI skill ecosystem integration", "Tessl agent skills registry partnership", "Cline autonomous coding security", "uv Python package manager integration"]
     },
     {
-      "bucket": "Integrations & Ecosystem",
-      "effort_pct": 25,
-      "key_items": ["ServiceNow CMDB sync", "Azure DevOps pipeline scanner", "GitHub Advanced Security interop", "Backstage plugin"]
+      "bucket": "Core Platform & Pricing",
+      "effort_pct": 20,
+      "key_items": ["Ignite tier launch ($1,260/yr)", "10 DAST targets in mid-tier", "FedRAMP availability for Enterprise", "Data residency (US/EU/AUS)"]
     },
     {
-      "bucket": "Admin & Compliance",
+      "bucket": "Security Research & Thought Leadership",
       "effort_pct": 15,
-      "key_items": ["SOC2 audit logging", "SSO improvements", "Role-based access granularity"]
+      "key_items": ["1,467 vulnerable AI agent skills identified", "76 confirmed malicious payloads", "Supply chain attack vectors on AI agents", "SF Innovation Hub launch"]
     }
   ],
   "intelligence_signals": {
-    "job_board_signals": "Heavy hiring for ML engineers (12 open roles), platform engineers, and developer advocates. Minimal security researcher hiring suggests reliance on vulnerability database partnerships.",
-    "target_users": "Platform engineers, DevOps leads, and application security champions within engineering teams",
-    "monetization_approach": "Freemium PLG with enterprise upsell. Free tier acts as developer acquisition funnel. Revenue growth from enterprise SSO, custom policies, and API access tiers.",
-    "differentiators": "Developer-first UX, largest vulnerability database, AI-powered fix suggestions, deep IDE integration. Snyk's moat is developer adoption at scale."
+    "job_board_signals": "Hiring broadly across teams globally with emphasis on Emerging Talent programs. Likely heavy ML/AI engineering hiring given product direction. SF Innovation Hub launch suggests West Coast engineering expansion.",
+    "target_users": "AI Security Engineers (new role they're defining), developers using AI coding agents (Cursor, Claude Code, Cline), platform engineering teams managing AI-assisted development pipelines",
+    "monetization_approach": "Four-tier model: Free (developer acquisition) → Team ($25/mo) → Ignite ($1,260/yr, mid-market with DAST) → Enterprise (custom, FedRAMP). Creating 'AI security' as a new budget category.",
+    "differentiators": "First-mover in AI/agentic security with research credibility. AI Security Fabric as platform play. Deep integration with AI coding tools. Creating the 'AI Security Engineer' job category gives them narrative control."
   },
   "securin_implications": {
     "gaps_exposed": [
-      "No AI-powered fix suggestion capability in Securin ASPM",
-      "Limited IDE/developer workflow integration",
-      "SBOM generation not as mature",
-      "No PLG/freemium motion to capture developer mindshare"
+      "Securin has no AI/agentic security offering — Snyk is defining this category",
+      "No security coverage for AI-generated code or AI coding agent workflows",
+      "No DAST capability in mid-tier pricing",
+      "Lack of security research output on emerging AI threats"
     ],
     "areas_of_focus": [
-      "Build developer-facing fix recommendations in ASPM",
-      "Invest in CI/CD pipeline integration depth",
-      "Consider SBOM-as-a-feature in Core VI"
+      "Monitor AI security category — may become mandatory for enterprise security stacks",
+      "Add AI-generated code analysis to ASPM pipeline",
+      "Invest in thought leadership around AI security threats",
+      "Evaluate whether VI can extend to AI/ML supply chain risks"
     ],
     "threat_level": "high",
     "product_specific": {
-      "ASPM": "Snyk's AI fix suggestions and developer UX set a high bar — Securin ASPM needs developer experience investment",
-      "Core (VI)": "Snyk's vulnerability database breadth and prioritization AI are competitive threats to VI's value proposition"
+      "ASPM": "Snyk's AI Security Fabric extends into AI-generated code — a dimension Securin doesn't cover. Ignite tier with DAST at $1,260/yr undercuts traditional ASPM pricing.",
+      "Core (VI)": "Snyk's ToxicSkills research and AI vulnerability database expansion threatens VI's comprehensiveness if AI vulnerabilities become a significant category.",
+      "APT": "Snyk's research on AI supply chain attacks is a new threat vector APT intelligence should track."
     }
   }
 }

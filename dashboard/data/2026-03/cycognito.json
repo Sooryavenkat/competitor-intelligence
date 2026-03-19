@@ -2,63 +2,63 @@
   "competitor": "CyCognito",
   "analysis_month": "2026-03",
   "executive_strategic_insight": {
-    "core_theme": "Maturing from EASM startup to enterprise attack surface platform with automated testing and risk prioritization",
-    "strategic_focus": "CyCognito is deepening its EASM capabilities with automated security testing (not just discovery), risk-based prioritization using business context, and compliance mapping. They're betting that passive scanning is table stakes — the future is automated validation.",
-    "ecosystem_momentum": "10 new integrations including Splunk SOAR, ServiceNow VR, and Tenable.io bidirectional sync. Building 'EASM feeds your existing security stack' positioning.",
-    "persona_shift": "Moving from security operations to CISO/risk management level. New features focus on board-ready reporting and business risk quantification.",
-    "pricing_model_shift": "Enterprise annual contracts based on asset count. Added a 'CyCognito Essential' tier for mid-market ($50K+ ARR). Previously enterprise-only."
+    "core_theme": "Cementing EASM market leadership through analyst recognition while building threat intelligence credibility with rapid CVE response content",
+    "strategic_focus": "CyCognito earned Leader + Outperformer in 2026 GigaOm Radar (3rd consecutive year, across 32 ASM vendors). They're combining market positioning with rapid threat intelligence content — publishing CVE analyses for HPE Aruba (pre-auth RCE), Microsoft SQL Server (privilege escalation), and Cisco Secure Firewall (root compromise) within days of disclosure. This positions them as both a platform and an intelligence source.",
+    "ecosystem_momentum": "GigaOm Radar Leader designation across 32 vendors is the strongest analyst signal in the EASM market. Threat intelligence content targets enterprise infrastructure (HPE, Microsoft, Cisco) — building credibility with infrastructure-heavy enterprises.",
+    "persona_shift": "Targeting infrastructure security teams and CISOs at enterprises with complex on-premises + cloud environments. CVE content focuses on network switches, databases, and firewalls — classic enterprise infrastructure, not just web apps.",
+    "pricing_model_shift": "Insufficient direct pricing data this month. Prior assessment: enterprise annual contracts based on asset count with mid-market 'Essential' tier."
   },
   "engineering_capacity": {
-    "total_updates_shipped": 25,
+    "total_updates_shipped": "25+",
     "new_features_vs_maintenance_ratio": "70/30",
-    "velocity_assessment": "High — strong feature velocity with significant new capability additions each month"
+    "velocity_assessment": "High — rapid CVE response content (3 critical vulnerabilities analyzed in 2 weeks) plus GigaOm recognition suggests both strong engineering and product marketing velocity."
   },
   "resource_allocation": [
     {
       "bucket": "Core EASM Platform",
       "effort_pct": 35,
-      "key_items": ["Automated security testing engine", "Business context-aware prioritization", "Subsidiary/M&A discovery", "Cloud asset attribution"]
+      "key_items": ["Attack surface discovery improvements", "Contextual vulnerability prioritization", "Asset attribution across subsidiaries", "Automated security testing engine"]
     },
     {
-      "bucket": "Risk & Compliance",
+      "bucket": "Threat Intelligence & CVE Response",
       "effort_pct": 25,
-      "key_items": ["Business risk quantification", "Board-ready risk reports", "PCI/HIPAA compliance mapping", "Risk trend analysis"]
+      "key_items": ["HPE Aruba AOS-CX pre-auth RCE analysis", "Microsoft SQL Server privilege escalation (CVE-2026-21262)", "Cisco Secure Firewall Management Center root compromise", "Rapid CVE response content pipeline"]
     },
     {
-      "bucket": "AI & Intelligence",
-      "effort_pct": 25,
-      "key_items": ["AI-powered asset classification", "Threat intelligence correlation", "Predictive risk scoring", "Natural language investigation queries"]
+      "bucket": "Market Positioning & Analyst Relations",
+      "effort_pct": 20,
+      "key_items": ["GigaOm Radar Leader designation (3rd consecutive year)", "Outperformer recognition across 32 ASM vendors", "Enterprise infrastructure credibility building"]
     },
     {
-      "bucket": "Integrations",
-      "effort_pct": 15,
-      "key_items": ["Splunk SOAR bidirectional", "ServiceNow VR ticketing", "Tenable.io sync", "Microsoft Sentinel"]
+      "bucket": "AI & Risk Intelligence",
+      "effort_pct": 20,
+      "key_items": ["AI-powered asset classification", "Business context-aware prioritization", "Predictive risk scoring", "Material exposure identification"]
     }
   ],
   "intelligence_signals": {
-    "job_board_signals": "Hiring enterprise AEs, customer success managers, and ML engineers. Sales + CS hiring suggests post-Series C scale-up focused on enterprise net retention.",
-    "target_users": "CISOs, VP Security, risk management teams at enterprises with large external footprints (financial services, healthcare, tech)",
-    "monetization_approach": "Enterprise SaaS with asset-based pricing. Adding mid-market tier suggests TAM expansion. Focus on multi-year contracts with expansion revenue from M&A discovery.",
-    "differentiators": "Most comprehensive external attack surface discovery (including unknown assets). Automated security testing beyond just scanning. Business context-aware risk scoring."
+    "job_board_signals": "Insufficient data from public scrape. GigaOm recognition + rapid content output suggests investment in both engineering and content/analyst relations teams.",
+    "target_users": "CISOs and infrastructure security teams at enterprises with complex environments (HPE switches, Microsoft SQL, Cisco firewalls). Focus on organizations where the attack surface spans on-prem + cloud.",
+    "monetization_approach": "Enterprise SaaS with asset-based pricing. Analyst recognition (GigaOm Leader) validates premium pricing. Rapid CVE content drives inbound leads from infrastructure teams.",
+    "differentiators": "Strongest analyst recognition in EASM (GigaOm Leader + Outperformer, 3 years running). Rapid CVE response content builds trust. Enterprise infrastructure focus (not just web apps). Business context-aware risk scoring."
   },
   "securin_implications": {
     "gaps_exposed": [
-      "CyCognito's automated security testing goes beyond Sentry EASM's passive scanning",
+      "CyCognito's GigaOm Leader status across 32 vendors puts Sentry EASM at a market positioning disadvantage",
+      "Rapid CVE response content for enterprise infrastructure (HPE, Cisco, Microsoft) builds credibility Securin lacks",
       "Business context-aware prioritization not available in Securin",
-      "M&A/subsidiary asset discovery is a gap",
-      "Board-ready risk reporting and quantification not mature in Securin"
+      "Automated security testing beyond passive scanning remains a gap"
     ],
     "areas_of_focus": [
-      "Add automated security testing to Sentry EASM (beyond passive scanning)",
-      "Build business context layer for risk prioritization across all products",
-      "Invest in executive/board-ready reporting across platform",
-      "Add M&A asset discovery to Sentry EASM"
+      "Invest in analyst relations for Sentry EASM — GigaOm and other analyst reports drive enterprise procurement",
+      "Build rapid CVE response capability tied to Securin products (VI + EASM combined)",
+      "Add business context layer for risk prioritization across all products",
+      "Consider automated testing addition to Sentry EASM"
     ],
     "threat_level": "high",
     "product_specific": {
-      "Sentry (EASM)": "CyCognito is the most direct competitor — their automated testing and business context scoring set a higher bar than passive EASM",
-      "ASM": "CyCognito's unknown asset discovery competes directly with ASM's core value proposition",
-      "Core (VI)": "Their risk quantification approach could influence how customers evaluate vulnerability intelligence platforms"
+      "Sentry (EASM)": "CyCognito is the most direct and well-positioned competitor — GigaOm Leader across 32 vendors, rapid threat intel, automated testing. Sentry needs differentiation strategy.",
+      "Core (VI)": "CyCognito's rapid CVE analysis content competes with VI's vulnerability intelligence value prop. Their contextual prioritization sets customer expectations.",
+      "ASM": "Their comprehensive discovery including enterprise infrastructure (not just web assets) competes with ASM's core proposition."
     }
   }
 }
