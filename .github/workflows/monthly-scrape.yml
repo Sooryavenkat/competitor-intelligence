@@ -1,17 +1,17 @@
-name: Monthly Competitor Intelligence
+name: Deploy Competitor Dashboard
 
 on:
-  schedule:
-    - cron: '0 9 1 * *'  # Runs 1st of every month at 9:00 AM UTC
-  workflow_dispatch:        # Allows manual trigger from GitHub UI
+  push:
+    branches: [main]        # Auto-deploy when you push new data
+  workflow_dispatch:         # Manual trigger from GitHub UI
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 jobs:
-  scrape-and-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,24 +23,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4 anthropic
-
-      - name: Run Agent 1 — Scraper + Analyst
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/agent1_scrape.py
-
-      - name: Run Agent 2 — Build Dashboard
+      - name: Build dashboard manifest
         run: python scripts/agent2_build.py
-
-      - name: Commit updated data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ dashboard/data/ dashboard/data/manifest.json
-          git diff --staged --quiet || git commit -m "chore: update competitor intelligence data $(date +'%Y-%m')"
-          git push
 
       - name: Deploy dashboard to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
