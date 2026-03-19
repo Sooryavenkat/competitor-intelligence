@@ -1,14 +1,9 @@
-name: Deploy Competitor Dashboard
+name: Deploy Competitor Dashboard to Netlify
 
 on:
   push:
     branches: [main]        # Auto-deploy when you push new data
   workflow_dispatch:         # Manual trigger from GitHub UI
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 jobs:
   build-and-deploy:
@@ -26,8 +21,11 @@ jobs:
       - name: Build dashboard manifest
         run: python scripts/agent2_build.py
 
-      - name: Deploy dashboard to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dashboard
+          publish-dir: ./dashboard
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

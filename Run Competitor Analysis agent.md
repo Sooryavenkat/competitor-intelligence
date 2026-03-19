@@ -2,14 +2,14 @@
 
 ## How It Works
 
-You run the analysis locally using Claude Code (no API key needed), then push to GitHub. The dashboard auto-deploys to GitHub Pages.
+You run the analysis locally using Claude Code (no API key needed), then push to GitHub. The dashboard auto-deploys to Netlify.
 
 ```
-Local (Claude Code)              GitHub (auto)
-─────────────────────            ──────────────
+Local (Claude Code)              GitHub + Netlify (auto)
+─────────────────────            ───────────────────────
 Run scraper + analysis    →      git push
-Claude Code handles API          GitHub Pages deploys dashboard
-Data saved as JSON               Live at https://Sooryavenkat.github.io/competitor-intelligence/
+Claude Code handles API          Netlify deploys dashboard
+Data saved as JSON               Live at your Netlify URL
 ```
 
 ## Prerequisites
@@ -47,7 +47,7 @@ git commit -m "Update competitor data YYYY-MM"
 git push
 ```
 
-GitHub Actions automatically deploys the dashboard after every push.
+Netlify automatically deploys the dashboard after every push.
 
 ## Useful Flags (for Step 1)
 
@@ -61,7 +61,7 @@ GitHub Actions automatically deploys the dashboard after every push.
 
 - **JSON data** saved to `data/{YYYY-MM}/{competitor}.json`
 - **Cross-competitor insights** saved to `data/{YYYY-MM}/insights.json`
-- **Dashboard** at `http://localhost:8080` (local) or GitHub Pages (cloud) with four views:
+- **Dashboard** at `http://localhost:8080` (local) or Netlify (cloud) with four views:
   - Overview — competitor cards with threat levels and metrics
   - Timeline — features shipped across months
   - Competitor Detail — full intelligence report per competitor
@@ -69,16 +69,36 @@ GitHub Actions automatically deploys the dashboard after every push.
 
 ---
 
-## Cloud Hosting Setup (GitHub Pages)
+## Cloud Hosting Setup (Netlify — Free, Private Repo Supported)
 
-Already configured. Dashboard auto-deploys on every `git push`.
+Repo stays private. Dashboard is hosted on Netlify with auto-deploy on every `git push`.
 
-### One-Time Setup (already done)
+### One-Time Setup
 
-1. Repo: https://github.com/Sooryavenkat/competitor-intelligence
-2. **Enable GitHub Pages:**
-   - Settings > Pages
-   - Source: **Deploy from a branch**
-   - Branch: `gh-pages` / `root`
-   - Save
-3. Dashboard will be live at: `https://Sooryavenkat.github.io/competitor-intelligence/`
+1. **Repo:** https://github.com/Sooryavenkat/competitor-intelligence (private)
+
+2. **Create Netlify site:**
+   - Go to [netlify.com](https://app.netlify.com/) and sign in with GitHub
+   - Click **Add new site** > **Import an existing project** > **GitHub**
+   - Select the `competitor-intelligence` repo
+   - Set **Publish directory** to: `dashboard`
+   - Click **Deploy site**
+
+3. **Get your Netlify credentials (for auto-deploy via GitHub Actions):**
+   - **Site ID:** Netlify > Site settings > General > Site ID (copy it)
+   - **Auth Token:** Netlify > User settings > Applications > Personal access tokens > New access token
+
+4. **Add secrets to GitHub repo:**
+   - Go to https://github.com/Sooryavenkat/competitor-intelligence/settings/secrets/actions
+   - Add two secrets:
+     - `NETLIFY_SITE_ID` — paste your Site ID
+     - `NETLIFY_AUTH_TOKEN` — paste your access token
+
+5. **Done.** Every `git push` now auto-deploys the dashboard.
+
+### Your dashboard URL
+
+After first deploy, Netlify gives you a URL like:
+`https://competitor-intelligence-xyz.netlify.app`
+
+You can customize this in Netlify > Site settings > Domain management.
